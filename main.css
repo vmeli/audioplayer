@@ -191,6 +191,16 @@ button:after {
   line-height: 28px;
   text-align: center;
 }
+.btn.control .icon-backward {
+  background: url(./backward-10.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.btn.control .icon-forward {
+  background: url(./forward-10.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 .btn.control .icon-play {
   margin: 0 5px;
 }
