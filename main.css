@@ -159,7 +159,7 @@ button:focus {
 }
 button.icon-play {
 	background-image: url('./play.svg');
-    background-size: contain;
+  background-size: contain;
 }
 button:after {
     position: absolute;
@@ -202,14 +202,18 @@ button:after {
   display: none;
   opacity: 0;
   background: radial-gradient(ellipse at center, rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%);
-  padding: 10px;
   transform: translate(0,0);
 }
 .modal-audioplayer.active-podcasts {
   display: block;
   animation: fade 0.3s linear forwards;
   opacity: 1;
-} 
+}
+.mol-post_Format4.active-audio button.icon-play,
+.modal-audioplayer.active-audio button.icon-play{
+  background-image: url('./pause.svg');
+  background-size: contain;
+}
 .wrapper-split-bloque {
   font-size: 0;
 }
@@ -226,10 +230,13 @@ button:after {
 .wrapper-split-bloque .btn.control {
   width: 106px;
 }
+.molecules-post-internal-audioplayerRider .podcast__content  {
+   padding: 10px;
+}
 .molecules-post-internal-audioplayerRider .time {
   font-size: 1.2rem;
   line-height: 1em;
-  color: #8a8a8a;
+  color: #5c5959;
   margin-bottom: 10px;
 }
 .molecules-post-internal-audioplayerRider .time #start {
@@ -243,6 +250,24 @@ button:after {
   top: 1.5px;
   font-size: 1rem;
   color: #8a8a8a;
+}
+.seekbarControl .outer {
+  /*border-radius: 5px;*/
+  height: 5px;
+  width: 100%;
+  display: block;
+  background: #DBDBDB;
+  overflow: hidden;
+  position: relative;
+}
+.seekbarControl .outer .inner {
+  background: #D70B0D;
+  height: 100%;
+  display: inline-block;
+  width: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 @keyframes fade {
   0% {
